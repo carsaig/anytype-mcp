@@ -1,0 +1,9 @@
+name: AnyType
+description: "Best PKMS Tool"
+base_image: node:22.14.0-alpine
+project_directory: /app
+install_command: npm install
+build_command: npm run build
+start_command: node dist/index.js
+env:
+  VEYRAX_API_KEY: config.VEYRAX_API_KEY
