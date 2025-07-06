@@ -6,4 +6,4 @@ install_command: npm install
 build_command: npm run build
 start_command: node dist/index.js
 env:
-  VEYRAX_API_KEY: {{VEYRAX_API_KEY}}
+  VEYRAX_API_KEY: ${{ secrets.VEYRAX_API_KEY }}
